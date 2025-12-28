@@ -8,7 +8,6 @@ from utils import classify_risk_level
 # Set page config
 st.set_page_config(
     page_title="Bacterial Blight Risk Prediction",
-    page_icon="🌱",
     layout="wide"
 )
 
@@ -21,7 +20,7 @@ The prediction is based on a machine learning model trained on historical weathe
 
 # Load and preprocess data
 try:
-    data = load_and_preprocess_data("attached_assets/Final_W_&_B_Data_full_edited.csv")
+    data = load_and_preprocess_data("Final_W_&_B_Data_full_edited.csv")
     st.success("Data loaded successfully!")
 except Exception as e:
     st.error(f"Error loading data: {e}")
